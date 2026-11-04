@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-labelledby="ffTitle">
+  <title id="ffTitle">Thanks for visiting — Fasih Abbasi</title>
+  <defs>
+    <linearGradient id="ffLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#13B9FD" stop-opacity="0"/>
+      <stop offset="0.3" stop-color="#13B9FD"/>
+      <stop offset="0.7" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#7C5CFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ffBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A1230"/>
+      <stop offset="1" stop-color="#120B2E"/>
+    </linearGradient>
+    <filter id="ffGlow" x="-10%" y="-300%" width="120%" height="700%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .ff-wave { stroke-dasharray: 1400; animation: ffDraw 8s ease-in-out infinite; }
+    .ff-text { font: 500 15px 'Cascadia Code', 'JetBrains Mono', Consolas, monospace; letter-spacing: 3px; fill: #9FB0D8; }
+    .ff-pulse { animation: ffPulse 2.6s ease-in-out infinite; }
+    @keyframes ffDraw { 0% { stroke-dashoffset: 1400; } 50%, 100% { stroke-dashoffset: 0; } }
+    @keyframes ffPulse { 0%, 100% { opacity: .5; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .ff-wave, .ff-pulse { animation: none !important; } }
+  </style>
+  <rect width="1200" height="120" rx="18" fill="url(#ffBg)"/>
+  <path class="ff-wave" d="M0 52 C150 22 300 82 450 52 S750 22 900 52 S1100 82 1200 52" fill="none" stroke="url(#ffLine)" stroke-width="2" filter="url(#ffGlow)"/>
+  <circle class="ff-pulse" cx="600" cy="52" r="4" fill="#EAF2FF" filter="url(#ffGlow)"/>
+  <text class="ff-text" x="600" y="98" text-anchor="middle">DESIGN IT · BUILD IT · SHIP IT</text>
+</svg>
