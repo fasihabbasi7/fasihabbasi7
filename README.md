@@ -24,6 +24,7 @@ I'm a **Flutter developer and UI/UX designer** from Islamabad, studying **BS Com
 ### 🏆 Honors & certifications
 
 | Honor | Details |
+|---|---|
 | 🎓 **Millennium Campus Network (MCN) Fellow — Class of 2026** | Selected for the global fellowship; presented **NeuralSafe** to the cohort |
 | 📜 **Introduction to AI** | Hewlett Packard |
 
